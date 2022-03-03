@@ -1,13 +1,13 @@
 
-
+//https://qiita.com/masato44gm/items/dffb8281536ad321fb08
+//restAPI
 
 const express = require("express");
 const app = express();
-const coronaData = require("./coronaData.json");
 
 
 app.get("/",function(req, res){
-  res.send(coronaData);
+  res.sendFile(__dirname + "/index.html");
 });
 
 
