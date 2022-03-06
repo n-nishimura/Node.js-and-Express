@@ -2,11 +2,17 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>日本の施設</title>
+  <title>バックエンドサーバー</title>
 </head>
 <body>
   <h1>日本の季節</h1>
   <p>秋葉行楽シーズンでたくさんの人がでかける</p>
+
+  <form action = "/autumn" method="POST">
+    <input type="text" name="activity">
+    <button type="submit">投稿</button>
+  </form>
 </body>
 </html>
 
+<!-- nodemonはいちいちnode実行しなくても自動で反映してくれる -->

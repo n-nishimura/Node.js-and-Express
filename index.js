@@ -10,6 +10,10 @@ app.get("/",function(req, res){
   res.sendFile(__dirname + "/index.html");
 });
 
+app.post("/autumn", function(req,res){
+  console.log("postの確認")
+});
+
 
 //port 5000はAirPlayと競合
 app.listen(5000, function(){
