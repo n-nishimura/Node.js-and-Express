@@ -17,7 +17,8 @@ app.post("/autumn", function(req,res){
   });
 });
 
-app.get("/update",function(req,res){
+app.post("/update",function(req,res){
+  activities[0].number = req.body.updateActivity;
   res.send(activities);
 });
 
