@@ -9,6 +9,7 @@ const activities = require("./activities.json")
 
 app.get("/",function(req, res){
   res.sendFile(__dirname + "/index.html");
+  // console.log(req)
 });
 
 app.post("/autumn", function(req,res){
@@ -21,6 +22,11 @@ app.post("/update",function(req,res){
   activities[0].number = req.body.updateActivity;
   res.send(activities);
 });
+
+app.post("/delete",function(req,res){
+
+});
+
 
 //port 5000はAirPlayと競合
 app.listen(5000, function(){
