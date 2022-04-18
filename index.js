@@ -24,6 +24,8 @@ app.post("/update",function(req,res){
 });
 
 app.post("/delete",function(req,res){
+  activities.splice(req.body.number , 1);
+  res.send(activities);
 
 });
 
